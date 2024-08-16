@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+
+<body>
+  <div class="prose m-auto">
+    <div class="p-4">
+      <form class="flex gap-2 items-center my-2" action="/" method="get">
+        <label for="location">Choose Location :</label>
+        <select class="w-[180px]" name="location">
+          <option value="" selected disabled>----</option>
+          <option value="Jakarta">Jakarta</option>
+          <option value="Bandung">Bandung</option>
+          <option value="Bogor">Bogor</option>
+        </select>
+        <button type="submit"
+          class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Submit</button>
+      </form>
+      <h1>Weather App</h1>
+      {{content}}
+    </div>
+
+  </div>
+</body>
+
+</html>
